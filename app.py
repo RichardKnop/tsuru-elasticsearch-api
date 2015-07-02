@@ -31,7 +31,7 @@ def remove_instance(name):
 def bind_app(name):
     envs = {
         "ELASTICSEARCH_HOST": get_ip_address('eth0'),
-        "ELASTISEARCH_PORT": 9200,
+        "ELASTICSEARCH_PORT": 9200,
     }
     return json.dumps(envs), 201
 
