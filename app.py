@@ -36,7 +36,17 @@ def bind_app(name):
     return json.dumps(envs), 201
 
 
+@app.route("/resources/<name>/bind", methods=["POST"])
+def bind_app(name):
+    return "", 201
+
+
 @app.route("/resources/<name>/bind-app", methods=["DELETE"])
+def unbind_app(name):
+    return "", 200
+
+
+@app.route("/resources/<name>/bind", methods=["DELETE"])
 def unbind_app(name):
     return "", 200
 
