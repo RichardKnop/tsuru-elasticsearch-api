@@ -37,7 +37,7 @@ def bind_app(name):
 
 
 @app.route("/resources/<name>/bind", methods=["POST"])
-def bind_app(name):
+def bind(name):
     return "", 201
 
 
@@ -47,7 +47,7 @@ def unbind_app(name):
 
 
 @app.route("/resources/<name>/bind", methods=["DELETE"])
-def unbind_app(name):
+def unbind(name):
     return "", 200
 
 
